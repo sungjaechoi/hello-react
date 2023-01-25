@@ -1,12 +1,8 @@
-import { Fragment } from "react"; 
-const name ='리웩트';
+import'./App.css';
 
 function App() {
-  return (    
-    <>
-    {name === '리엑트' ? <h1>리엑트 입니다.</h1>:<h1>리엑트가 아닙니다.</h1>}
-    </>
-  );
+  const name = undefined;
+  return name;
 }
 
 export default App;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ErrorBoundary from "./ErrorBoundary";
 import LifeCycleSample from "./LifeCycleSample";
 
 // 랜덤 색상을 생성합니다
@@ -19,11 +20,13 @@ function App() {
   };
 
   return (
-    <>
+    <div>
       <button onClick={onClick}>랜덤 색상</button>
-      <button onClick={onToggle}>삭제</button>
-      {visible && <LifeCycleSample color={color} />}
-    </>
+        <button onClick={onToggle}>삭제</button>
+      <ErrorBoundary>
+        {visible && <LifeCycleSample color={color} />}
+      </ErrorBoundary>
+    </div>
   );
 }
 

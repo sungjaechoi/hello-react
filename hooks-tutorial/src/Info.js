@@ -5,11 +5,13 @@ const Info = () => {
   const [number, setNumber] = useState("");
 
   useEffect(() => {
-    console.log('Effect')
+    console.log("Effect");
+    console.log(number);
     return () => {
-      console.log('CleanUp - Unmount')
-    }
-  },[]);
+      console.log("CleanUp");
+      console.log(number);
+    };
+  }, [number]);
 
   const onChangName = (e) => {
     setName(e.target.value);

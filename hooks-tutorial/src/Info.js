@@ -2,32 +2,32 @@ import { useState, useEffect } from "react";
 
 const Info = () => {
   const [name, setName] = useState("");
-  const [nickname, setNickname] = useState("");
+  const [number, setNumber] = useState("");
 
   useEffect(() => {
-    console.log('마운트될 때만 실행됩니다.')
-  },[])
+    console.log({name, number})
+  },[number]);
 
   const onChangName = (e) => {
     setName(e.target.value);
   };
 
-  const onChangNickname = (e) => {
-    setNickname(e.target.value);
+  const onChangNumber = (e) => {
+    setNumber(e.target.value);
   };
 
   return (
     <div>
       <div>
         <input value={name} onChange={onChangName} />
-        <input value={nickname} onChange={onChangNickname} />
+        <input value={number} onChange={onChangNumber} />
       </div>
       <div>
         <div>
           <b>이름:</b> {name}
         </div>
         <div>
-          <b>군번:</b> {nickname}
+          <b>군번:</b> {number}
         </div>
       </div>
     </div>

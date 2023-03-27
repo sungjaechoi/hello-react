@@ -1,7 +1,7 @@
-import Counter from "./Counter";
+import CountReducer from "./CountReducer";
 
 const App = () => {
-  return <Counter/>
+  return <CountReducer />;
 }
 
 export default App

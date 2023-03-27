@@ -1,5 +1,5 @@
-import {useState} from 'react'
-import Info from "./Info";
+import InfoReducer from "./InfoReducer";
+import { useState } from "react";
 
 const App = () => {
   const [visible, setVisible] = useState(false);
@@ -13,9 +13,9 @@ const App = () => {
         {visible ? "숨기기" : "보이기"}
       </button>
       <hr />
-      {visible && <Info />}
+      {visible && <InfoReducer />}
     </div>
   );
-}
+};
 
 export default App;

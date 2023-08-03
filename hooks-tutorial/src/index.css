@@ -7,6 +7,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root{
+  padding-top: 44px;
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+}
+
+input + input{
+  margin-left: 5px;
+}
+
+input + button{
+  margin-left: 5px;
+}
+
+h2{
+  margin: 40px 0 10px 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

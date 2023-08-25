@@ -39,9 +39,9 @@ const CSSModule = () => {
       <div className={`${warpper} ${inverted ? "" : inverted}`}>
         안녕하세요, 저는 <span className="something">CSS Module!</span>
       </div>
-      {/* classnames 라이브러 */}
+      {/* classnames 라이브러 + :local 적용 */}
       <div
-        className={css("warpper", { inverted: divToggle })}
+        className={css("warpper", { inverted: divToggle }, "scss_local")}
         onClick={onClick}
       >
         안녕하세요, 저는 <span className="something">CSS Module!</span>

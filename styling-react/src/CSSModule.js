@@ -1,5 +1,10 @@
 import { useState } from 'react';
-import styles from './CSSModule.module.css'
+
+// node_Module css
+// import styles from './CSSModule.module.css'
+
+// node_Module scss
+import styles from './CSSModule.module.scss'
 import classnames from 'classnames/bind'
 
 const css = classnames.bind(styles);

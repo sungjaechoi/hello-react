@@ -1,0 +1,20 @@
+.warpper {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+
+  &.inverted {
+      border: 1px solid black;
+      color: black;
+      background: white;
+    }
+}
+
+:global{
+  .something {
+      font-weight: 800;
+      color: aqua;
+    }
+} 

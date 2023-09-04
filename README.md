@@ -1,5 +1,5 @@
 # parctice_react
-리엑트를 다루는 기술
+리엑트를 다루는 기술 - 튜토리얼
 
 # Getting Started with Create React App
 
